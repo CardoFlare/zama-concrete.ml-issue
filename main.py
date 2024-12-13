@@ -1,8 +1,11 @@
 from concrete.ml.deployment import FHEModelClient, FHEModelDev, FHEModelServer
 from concrete.ml.sklearn import XGBClassifier
+from utils import clean_directory
 import numpy
 import time
 import joblib
+
+clean_directory("artifacts")
 
 # Number of input to take into account for prediction
 N_PREDICTIONS = 2
